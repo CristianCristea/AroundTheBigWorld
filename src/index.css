@@ -1,0 +1,314 @@
+.app {
+  position: relative;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10px;
+  color: #111; }
+  .app header {
+    margin-top: 50px; }
+  .app h1, .app h2, .app h3, .app h4, .app h5, .app h6 {
+    margin: 0; }
+  .app img {
+    max-width: 100%;
+    height: auto; }
+  .app ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .app section {
+    margin-top: 4rem; }
+  .app .container-fluid {
+    padding: 0; }
+
+.navbar.navbar-default {
+  margin-bottom: 0;
+  background-color: #9B58B5;
+  border: none;
+  text-align: center; }
+  .navbar.navbar-default .navbar-brand {
+    width: 100px;
+    padding-top: 7px; }
+  .navbar.navbar-default .navbar-header span.icon-bar {
+    background-color: #fff; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-size: 1.8rem; }
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.5); }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.5); }
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #9B58B5; }
+
+.navbar-default .navbar-brand {
+  color: #fff; }
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+  background-color: transparent; }
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #fff !important;
+  text-align: center; }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  color: #fff;
+  background-color: #9B58B5; }
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.5); }
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: #9B58B5; }
+
+@media screen and (max-width: 768px) {
+  .navbar.navbar-default .navbar-header .navbar-toggle {
+    margin-right: 30px; }
+  .navbar.navbar-default .container,
+  .navbar.navbar-default .navbar-collapse,
+  .navbar.navbar-default div[class^="col-"] {
+    padding-left: 0;
+    padding-right: 0; }
+  .navbar.navbar-default .row {
+    margin-left: 0;
+    margin-right: 0; } }
+.heading-primary {
+  margin: 0 !important;
+  color: #333;
+  padding-top: 30px;
+  font-size: 4em;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 1px 0 #000; }
+  @media screen and (min-width: 768px) {
+    .heading-primary {
+      font-size: 5em; } }
+  @media screen and (min-width: 1020px) {
+    .heading-primary {
+      font-size: 7em; } }
+  .heading-primary a {
+    text-decoration: none;
+    color: inherit; }
+    .heading-primary a:hover, .heading-primary a:focus {
+      text-decoration: none; }
+
+header.main-header {
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  background-size: cover; }
+  @media screen and (min-width: 1020px) {
+    header.main-header {
+      background-position: center center;
+      min-height: 700px; } }
+  @media screen and (orientation: landscape) {
+    header.main-header {
+      background-position: center center;
+      min-height: 60vh; } }
+
+.social-icons-small {
+  text-align: center;
+  margin: 0 auto; }
+  .social-icons-small .btn, .social-icons-small .btn-facebook, .social-icons-small .btn-instagram, .social-icons-small .btn-mail {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ddd;
+    /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px; }
+  .social-icons-small .btn-facebook {
+    background: #4060A5; }
+    .social-icons-small .btn-facebook:before {
+      font-family: "FontAwesome";
+      content: "\f09a";
+      /* add facebook icon */ }
+    .social-icons-small .btn-facebook:hover {
+      color: #4060A5;
+      background: #fff;
+      border-color: #4060A5; }
+  .social-icons-small .btn-instagram {
+    background-color: #e64522; }
+    .social-icons-small .btn-instagram:before {
+      font-family: "FontAwesome";
+      content: "\f16d";
+      /* add googleplus icon */ }
+    .social-icons-small .btn-instagram:hover {
+      color: #e64522;
+      background: #fff;
+      border-color: #e64522; }
+  .social-icons-small .btn-mail {
+    background-color: #e88845; }
+    .social-icons-small .btn-mail:before {
+      font-family: "FontAwesome";
+      content: "\f003";
+      /* add rss icon */ }
+    .social-icons-small .btn-mail:hover {
+      color: #e88845;
+      background: #fff;
+      border-color: #e88845; }
+
+.articles .article-thumbnail {
+  margin-top: 5rem; }
+
+.text {
+  font-size: 2.2rem;
+  color: #333;
+  line-height: 1.4; }
+
+.article-thumbnail {
+  text-align: center; }
+  .article-thumbnail a:hover, .article-thumbnail a:focus {
+    text-decoration: none; }
+  .article-thumbnail .article-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 1px 0 #000;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 1;
+    margin-bottom: .5rem; }
+    @media screen and (min-width: 768px) {
+      .article-thumbnail .article-heading {
+        font-size: 5rem; } }
+    @media screen and (min-width: 1020px) {
+      .article-thumbnail .article-heading {
+        font-size: 6rem; } }
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #9B58B5;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff; }
+  footer p {
+    color: #fff;
+    margin: 0; }
+  footer a {
+    color: #fff; }
+    footer a:hover, footer a:focus {
+      color: #fff; }
+
+.nav.nav-pills {
+  margin-top: 20px; }
+
+footer {
+  min-height: 45px;
+  margin-top: 10rem; }
+
+.heading-secondary, .heading-secondary_dark {
+  color: #fff;
+  margin: 0 !important;
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 1px 0 #000; }
+  @media screen and (min-width: 768px) {
+    .heading-secondary, .heading-secondary_dark {
+      font-size: 7rem; } }
+  @media screen and (min-width: 1020px) {
+    .heading-secondary, .heading-secondary_dark {
+      font-size: 8em; } }
+
+.heading-secondary_dark {
+  color: #333; }
+
+header.mini-header {
+  height: 45vh;
+  width: 100%;
+  /*background: tomato url(../img/2.jpg) no-repeat;*/
+  background-position: 78% center;
+  background-size: cover; }
+  @media screen and (min-width: 1020px) {
+    header.mini-header {
+      background-position: center center; } }
+  header.mini-header a {
+    color: inherit; }
+    header.mini-header a:hover, header.mini-header a:focus {
+      text-decoration: none;
+      color: inherit; }
+
+.text {
+  font-size: 2.2rem;
+  color: #333;
+  line-height: 1.4; }
+
+.article img {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #9B58B5;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff; }
+  footer p {
+    color: #fff;
+    margin: 0; }
+  footer a {
+    color: #fff; }
+    footer a:hover, footer a:focus {
+      color: #fff; }
+
+.article .heading-secondary, .article .heading-secondary_dark {
+  padding-top: 1rem; }
+
+.page-about .mini-header {
+  position: relative; }
+  .page-about .mini-header .heading-secondary, .page-about .mini-header .heading-secondary_dark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/*.single-page-destinations header.destination-bali {
+  background-image: url(../img/10.jpg); }
+.single-page-destinations header.destination-bangkok {
+  background-image: url(../img/6.jpg); }*/
+
+.single-article-page .heading-secondary_dark {
+  padding-bottom: 2rem; }
+
+/*header.page-art-in-bali {
+  background-image: url(../img/12.jpg); }
+
+header.page-about {
+  background-image: url(../img/1.jpg); }*/
+
+footer {
+  margin-top: 10rem; }
+
+/*# sourceMappingURL=styles.css.map */
