@@ -1,25 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 import HeadingSmall from '../components/HeadingSmall';
 
 const ArticleThumbnail = ({hrefLink, image, title}) => {
+  console.log(hrefLink);
   return (
     <figure className="article-thumbnail">
       <Col xs={10} xsOffset={1} sm={10} smOffset={1} md={8} mdOffset={2}>
-        <a href={hrefLink}>
+        <Link to="/#">
           <img src={image} alt={title} title={title} />
           <figcaption>
             <HeadingSmall title={title} />
           </figcaption>
-        </a>
+        </Link>
       </Col>
     </figure>
   );
 }
 
 ArticleThumbnail.propTypes = {
-  hrefLink: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 }

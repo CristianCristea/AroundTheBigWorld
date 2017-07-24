@@ -4,13 +4,12 @@ import { Grid, Row } from 'react-bootstrap';
 import ArticleThumbnail from './ArticleThumbnail';
 
 const ArticleThumbnails = ({articleThumbnails}) => {
-  console.log(articleThumbnails)
   return (
     <section className="articles">
       <Grid>
         {articleThumbnails.map((article) => {
           return (
-            <Row>
+            <Row key={article.id}>
               <ArticleThumbnail {...article} />
             </Row>
           );
