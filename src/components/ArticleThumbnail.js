@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 
 import HeadingSmall from '../components/HeadingSmall';
 
-const ArticleThumbnail = ({hrefLink, image, title}) => {
-  console.log(hrefLink);
+const ArticleThumbnail = ({image, title}) => {
   return (
     <figure className="article-thumbnail">
       <Col xs={10} xsOffset={1} sm={10} smOffset={1} md={8} mdOffset={2}>

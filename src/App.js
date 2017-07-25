@@ -20,13 +20,11 @@ const articleThumbnails = {
   bali: [
     {
       id: 1,
-      hrefLink: '#',
       image: '../img/article-thumbnails/1.jpg',
       title: 'Art in Bali',
     },
     {
       id: 2,
-      hrefLink: '#',
       image: '../img/article-thumbnails/2.jpg',
       title: 'Bali Rice Fields',
     }
@@ -34,13 +32,11 @@ const articleThumbnails = {
   bangkok: [
     {
       id: 1,
-      hrefLink: '#',
       image: '../img/article-thumbnails/3.jpg',
       title: 'Bars in Bangkok',
     },
     {
       id: 2,
-      hrefLink: '#',
       image: '../img/article-thumbnails/30.jpg',
       title: 'Bangkok',
     }
@@ -48,13 +44,11 @@ const articleThumbnails = {
   singapore: [
     {
       id: 1,
-      hrefLink: '#',
       image: '../img/article-thumbnails/1.jpg',
       title: 'Singapore Hotels',
     },
     {
       id: 2,
-      hrefLink: '#',
       image: '../img/article-thumbnails/2.jpg',
       title: 'Singapore Marina Bay Sands',
     }
