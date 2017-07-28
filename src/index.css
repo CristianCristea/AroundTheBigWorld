@@ -247,7 +247,6 @@ footer {
 header.mini-header {
   height: 45vh;
   width: 100%;
-  /*background: tomato url(../img/2.jpg) no-repeat;*/
   background-position: 78% center;
   background-size: cover; }
   @media screen and (min-width: 1020px) {
@@ -286,27 +285,16 @@ footer {
 .article .heading-secondary, .article .heading-secondary_dark {
   padding-top: 1rem; }
 
-.page-about .mini-header {
+.mini-header {
   position: relative; }
-  .page-about .mini-header .heading-secondary, .page-about .mini-header .heading-secondary_dark {
+  .mini-header .heading-secondary, .mini-header .heading-secondary_dark {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
-/*.single-page-destinations header.destination-bali {
-  background-image: url(../img/10.jpg); }
-.single-page-destinations header.destination-bangkok {
-  background-image: url(../img/6.jpg); }*/
-
 .single-article-page .heading-secondary_dark {
   padding-bottom: 2rem; }
-
-/*header.page-art-in-bali {
-  background-image: url(../img/12.jpg); }
-
-header.page-about {
-  background-image: url(../img/1.jpg); }*/
 
 footer {
   margin-top: 10rem; }
