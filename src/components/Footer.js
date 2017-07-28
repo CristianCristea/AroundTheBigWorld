@@ -1,7 +1,8 @@
-import React from 'react';
+import React              from 'react';
+import PropTypes          from 'prop-types';
 import { Grid, Row, Col } from 'react-bootstrap';
 
-// TODO Disclaimer link
+// TODO: Disclaimer link
 const Footer = ({year}) => {
   return (
     <footer>
@@ -19,6 +20,10 @@ const Footer = ({year}) => {
       </Grid>
     </footer>
   );
+}
+
+Footer.propTypes = {
+  year: PropTypes.number.isRequired
 }
 
 export default Footer;

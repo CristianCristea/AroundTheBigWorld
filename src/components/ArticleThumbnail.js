@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 
 import HeadingSmall from '../components/HeadingSmall';
 
-const ArticleThumbnail = ({image, title}) => {
+const ArticleThumbnail = ({title, imageUrl}) => {
   return (
     <figure className="article-thumbnail">
       <Col xs={10} xsOffset={1} sm={10} smOffset={1} md={8} mdOffset={2}>
         <Link to="/#">
-          <img src={image} alt={title} title={title} />
+          <img src={imageUrl} alt={title} title={title} />
           <figcaption>
             <HeadingSmall title={title} />
           </figcaption>
@@ -21,7 +21,7 @@ const ArticleThumbnail = ({image, title}) => {
 }
 
 ArticleThumbnail.propTypes = {
-  image: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 }
 

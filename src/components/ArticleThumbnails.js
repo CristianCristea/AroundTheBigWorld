@@ -4,16 +4,18 @@ import { Grid, Row } from 'react-bootstrap';
 import ArticleThumbnail from './ArticleThumbnail';
 
 const ArticleThumbnails = ({articleThumbnails}) => {
+  let articles = articleThumbnails.map((article) => {
+    return (
+      <Row key={article.id}>
+        <ArticleThumbnail title={article.title.rendered} imageUrl={article.acf.thumbnail_image.url}/>
+      </Row>
+    );
+  });
+
   return (
     <section className="articles">
       <Grid>
-        {articleThumbnails.map((article) => {
-          return (
-            <Row key={article.id}>
-              <ArticleThumbnail {...article} />
-            </Row>
-          );
-        })}
+        {articles}
       </Grid>
     </section>
   );
