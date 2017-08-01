@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React      from 'react';
+import PropTypes  from 'prop-types';
 
-const HeadingSmall = ({title}) => {
+const HeadingSmall = ({title, color='white'}) => {
   return (
-    <h3 className="article-heading">{title}</h3>
+    <h3 className="article-heading" style={{color: color }}>{title}</h3>
   );
 }
 
