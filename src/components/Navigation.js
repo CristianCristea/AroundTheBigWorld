@@ -8,8 +8,7 @@ import {
   Nav, NavItem, NavDropdown, MenuItem
 }                           from 'react-bootstrap';
 
-
-const Navigation = () => {
+const Navigation = ({destinations, capitalizeWord, match}) => {
   return (
     <Navbar default fixedTop collapseOnSelect>
       <Grid>
@@ -24,9 +23,11 @@ const Navigation = () => {
             <Navbar.Collapse>
               <Nav>
                 <NavDropdown eventKey={1} title="Destinations" id="basic-nav-dropdown">
-                  <LinkContainer to="/destinations/bali"><MenuItem eventKey={1.1}>Bali</MenuItem></LinkContainer>
-                  <LinkContainer to="/destinations/bangkok"><MenuItem eventKey={1.2}>Bangkok</MenuItem></LinkContainer>
-                  <LinkContainer to="/destinations/singapore"><MenuItem eventKey={1.3}>Singapore</MenuItem></LinkContainer>
+
+                  {destinations.map((destination) => {
+                    return <LinkContainer to={`/destinations/${destination}`} key={destination}><MenuItem eventKey={1.1}>{`${capitalizeWord(destination)}`}</MenuItem></LinkContainer>
+                  })}
+
                 </NavDropdown>
                 <LinkContainer to="/photos"><NavItem eventKey={2}>Photos</NavItem></LinkContainer>
                 <LinkContainer to="/about"><NavItem eventKey={3}>About</NavItem></LinkContainer>

@@ -8,21 +8,21 @@ import HeadingPrimary       from '../components/HeadingPrimary';
 import ArticleThumbnails    from '../components/ArticleThumbnails';
 import Footer               from '../components/Footer';
 
-const Homepage = ({articleThumbnails, year, title}) => {
+const Homepage = ({destinations, posts, year, title, capitalizeWord}) => {
   return (
     <div>
-      <Navigation />
+      <Navigation destinations={destinations} capitalizeWord={capitalizeWord} />
       <BigHeader imageUrl={headerImage} positionY={50} />
       <HeadingPrimary title={title} />
       <SocialIconsNavbar socialLinks={{facebook: 'http://facebook.com', instagram: 'http://instagram.com', mail: 'contact@aroundthebigworld.com'}} />
-      <ArticleThumbnails articleThumbnails={articleThumbnails} />
+      <ArticleThumbnails posts={posts} />
       <Footer year={year} />
     </div>
   );
 }
 
 Homepage.PropTypes = {
-  articleThumbnaild:  PropTypes.object.isRequired,
+  posts:  PropTypes.object.isRequired,
   year:               PropTypes.number.isRequired,
   title:              PropTypes.string.isRequired
 }
