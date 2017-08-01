@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Grid, Row } from 'react-bootstrap';
+import React            from 'react';
+import PropTypes        from 'prop-types';
+import { Grid, Row }    from 'react-bootstrap';
 import ArticleThumbnail from './ArticleThumbnail';
 
-const ArticleThumbnails = ({articleThumbnails}) => {
-  let articles = articleThumbnails.map((article) => {
+const ArticleThumbnails = ({ posts }) => {
+  let articles = posts.map((post) => {
     return (
-      <Row key={article.id}>
-        <ArticleThumbnail title={article.title.rendered} imageUrl={article.acf.thumbnail_image.url}/>
+      <Row key={post.id}>
+        <ArticleThumbnail title={post.title.rendered} imageUrl={post.acf.thumbnail_image.url}/>
       </Row>
     );
   });
@@ -22,7 +22,7 @@ const ArticleThumbnails = ({articleThumbnails}) => {
 }
 
 ArticleThumbnails.propTypes = {
-  articleThumbnails: PropTypes.array.isRequired,
+  posts: PropTypes.array.isRequired,
 }
 
 export default ArticleThumbnails;
