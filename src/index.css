@@ -283,7 +283,8 @@ footer {
       color: #fff; }
 
 .article .heading-secondary, .article .heading-secondary_dark {
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  padding-bottom: 3rem; }
 
 .mini-header {
   position: relative; }
@@ -292,9 +293,6 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-
-.single-article-page .heading-secondary_dark {
-  padding-bottom: 2rem; }
 
 footer {
   margin-top: 10rem; }
