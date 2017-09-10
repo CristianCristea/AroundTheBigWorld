@@ -294,6 +294,24 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.btn-simple {
+  border: 1px solid #ccc;
+  font-size: 20px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  color:inherit;
+}
+
+.btn-simple:focus,
+.btn-simple:hover {
+  outline: none;
+  text-decoration: none;
+  border-color: #9B58B5;
+  color: inherit;
+}
+
+
 footer {
   margin-top: 10rem; }
 

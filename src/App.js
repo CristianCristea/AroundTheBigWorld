@@ -1,12 +1,17 @@
 import React, { Component }             from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-// import sanitizeHTML from 'sanitize-html-react'; TODO: sanitize html input to except script tags
+import {
+  BrowserRouter,
+  Switch,
+  Route
+}                                       from 'react-router-dom';
 import Layout                           from './components/Layout';
 import Homepage                         from './components/Homepage';
 import About                            from './components/About';
-import Photos                           from './components/Photos';
 import PageNotFound                     from './components/PageNotFound';
+import Disclaimer                       from './components/Disclaimer';
 import SinglePostPage                   from './components/SinglePostPage';
+import pageNotFoundBkg                  from './img/headers/1.jpg';
+// import sanitizeHTML                  from 'sanitize-html-react'; TODO: sanitize html input to except script tags
 
 /* routes
   /                                         - index
@@ -91,19 +96,29 @@ export default class App extends Component {
                                                         title="Around The Big World"
                                                         year={year}
                                                         capitalizeWord={this.capitalizeWord}/>} />
-            <Route path="/about" render={()=><About title={aboutPage.title.rendered}
+            <Route exact path="/about" render={()=><About title={aboutPage.title.rendered}
                                                     content={aboutPage.content.rendered}
                                                     imageUrl={aboutPage.acf.header_image.url}
                                                     destinations={destinations}
                                                     capitalizeWord={this.capitalizeWord}
                                                     year={year}/>} />
-            <Route path="/destinations/:name" render={(props) => <SinglePostPage posts={this.state.posts}
+            <Route exact path="/destinations/:name" render={(props) => <SinglePostPage posts={this.state.posts}
                                                                                  getCurrentPost={this.getCurrentPost}
                                                                                  destinations={destinations}
                                                                                  capitalizeWord={this.capitalizeWord}
+                                                                                 imageUrl={pageNotFoundBkg}
                                                                                  year={year} {...props}/>} />
-            <Route path="/photos" render={()=> window.location = "https://instagram.com"}/>
-            <Route component={PageNotFound} />
+            <Route exact path="/photos" render={()=> window.location = "https://instagram.com"}/>
+            <Route path="/disclaimer" render={()=><Disclaimer title="Disclaimer"
+                                             imageUrl={pageNotFoundBkg}
+                                             destinations={destinations}
+                                             capitalizeWord={this.capitalizeWord}
+                                             year={year}/>} />
+           <Route render={()=><PageNotFound title="Page Not Found"
+                                            imageUrl={pageNotFoundBkg}
+                                            destinations={destinations}
+                                            capitalizeWord={this.capitalizeWord}
+                                            year={year}/>} />
           </Switch>
         </Layout>
       </BrowserRouter>
